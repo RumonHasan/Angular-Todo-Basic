@@ -1,0 +1,21 @@
+
+<div class="singleTask" [ngStyle]="{'border': singleTask.checked ? '4px solid blue': '4px solid red'}">
+    <div class="task-details">
+        <h1>
+            {{singleTask.title}}
+        </h1>
+        <p>
+            {{singleTask.description}}
+        </p>
+        <p>Category:
+            <button class="button-category" (click)="selectCategory(singleTask.category)">
+                #{{singleTask.category}}
+            </button>
+        </p>
+    </div>
+    <div class="task-buttons">
+        <button (click)="selectTask(singleTask.id)">Delete</button>
+        <button (click)="checkStatus(singleTask.checked, singleTask.id)">{{singleTask.checked ? 'Uncheck': 'Check'}}</button>
+    </div>
+    
+</div>

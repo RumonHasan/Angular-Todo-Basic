@@ -1,0 +1,42 @@
+.singleTask {
+  border: 2px solid black;
+  min-height: 100px;
+  min-width: 100px;
+  width: 500px;
+  transition: 0.5s ease-in-out;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.singleTask:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  background-color: lightblue;
+}
+
+.task-details {
+}
+
+.task-buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.button-category {
+  background: none;
+  border: none;
+  font-weight: bold;
+  margin: 10px;
+  font-size: 20px;
+}
+.button-category:hover {
+  transition: 0.5s ease-in-out;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}

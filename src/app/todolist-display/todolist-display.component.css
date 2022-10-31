@@ -1,0 +1,14 @@
+.list {
+  list-style: none;
+}
+
+.task-list {
+}
+
+.task-container {
+  display: flex;
+}
+
+.checked-tasks {
+  margin-left: 100px;
+}

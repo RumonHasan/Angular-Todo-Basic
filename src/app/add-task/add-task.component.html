@@ -1,0 +1,8 @@
+<h3>Adding a Task form comes here</h3>
+
+<form class="form-styles">
+    <input placeholder="Enter task title" id="title" [formControl]="title" type="text"/>
+    <input placeholder="Enter task description" id="description" [formControl] ="description" type="text"/>
+    <input placeholder="Enter Task Category" id="category" [formControl] = "category" type="text"/>
+</form>
+<button (click)="onSubmit()"> Add A Task</button>
